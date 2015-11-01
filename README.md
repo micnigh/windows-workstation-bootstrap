@@ -113,11 +113,11 @@ npm config set msvs_version 2015
 
 # prepare c++ tools [due to node-gyp npm issues](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151018292)
 
-Roughly from [comment](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151009181)
+Roughly from this [comment](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151009181)
 
-Start VS2015
-File -> New Project
-Run Install support for C++
+ - Start VS2015
+ - File -> New Project
+ - Run Install support for C++
 
 This will install the sdk you need to compile node C++ modules on windows.
 
