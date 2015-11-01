@@ -105,7 +105,7 @@ apm install \
 
 # npm config
 # use user path, not install path
-npm config set prefix ~/npm
+npm config set prefix '~/npm/'
 # use msys2015 when compiling modules
 npm config set msvs_version 2015
 
