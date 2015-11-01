@@ -28,6 +28,7 @@ cinst -y conemu
 #
 cinst -y \
   7zip \
+  jdk8 \
   androidstudio \
   visualstudio2015community \
   python2 \
