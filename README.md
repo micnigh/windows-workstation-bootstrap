@@ -116,3 +116,7 @@ git remote add origin https://github.com/micnigh/windows-dotfiles.git
 git fetch --all
 git reset --hard origin/master
 ```
+
+# reboot
+
+All finished after rebooting :)
