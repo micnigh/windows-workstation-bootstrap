@@ -74,7 +74,9 @@ cinst -y \
 ```bash
 
 # install ConEmu.xml config
-curl -o $APPDATA/ConEmu.xml https://raw.githubusercontent.com/micnigh/windows-workstation-bootstrap/master/files/AppData/Roaming/ConEmu.xml
+curl \
+  -o $APPDATA/ConEmu.xml \
+  https://raw.githubusercontent.com/micnigh/windows-workstation-bootstrap/master/files/AppData/Roaming/ConEmu.xml
 
 # apm packages
 apm install \
@@ -99,7 +101,7 @@ apm install \
   tabs-to-spaces \
   Sublime-Style-Column-Selection \
   color-picker \
-  editorconfig \
+  editorconfig
 
 ```
 
