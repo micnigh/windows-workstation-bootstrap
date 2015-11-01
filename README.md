@@ -103,6 +103,12 @@ apm install \
   color-picker \
   editorconfig
 
+# npm config
+# use user path, not install path
+npm config set prefix ~/npm
+# use msys2015 when compiling modules
+npm config set msvs_version 2015
+
 ```
 
 # install personal ssh certificates into `~/.ssh`
