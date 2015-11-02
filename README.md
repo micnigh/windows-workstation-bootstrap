@@ -102,7 +102,8 @@ apm install \
   tabs-to-spaces \
   Sublime-Style-Column-Selection \
   color-picker \
-  editorconfig
+  editorconfig \
+  imdone-atom
 
 # npm config
 # use user path, not install path
