@@ -91,7 +91,7 @@ cinst -y \
 Roughly from this [comment](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151009181)
 
  - Start VS2015
- - File -> New Project
+ - File -> New Project -> Visual C++
  - Run `Install Visual C++ 2015 Tools`
 
 This will install the sdk you need to compile native node C++ modules on windows, improving performance.
