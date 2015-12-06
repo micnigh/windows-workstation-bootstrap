@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
   <key name="ConEmu">
-    <key name=".Vanilla" modified="2015-08-23 13:14:15" build="150728">
+    <key name=".Vanilla" modified="2015-12-06 15:35:00" build="151205">
       <value name="SingleInstance" type="hex" data="00"/>
       <value name="KeyboardHooks" type="hex" data="02"/>
       <value name="UseInjects" type="hex" data="01"/>
-      <value name="Update.CheckOnStartup" type="hex" data="00"/>
+      <value name="Update.CheckOnStartup" type="hex" data="01"/>
       <value name="Update.CheckHourly" type="hex" data="00"/>
       <value name="Update.ConfirmDownload" type="hex" data="01"/>
       <value name="Update.UseBuilds" type="hex" data="02"/>
-      <value name="FontUseDpi" type="hex" data="00"/>
+      <value name="FontUseDpi" type="hex" data="01"/>
       <value name="FontUseUnits" type="hex" data="00"/>
       <value name="FontSize" type="dword" data="00000010"/>
       <value name="StatusFontHeight" type="dword" data="0000000e"/>
       <value name="TabFontHeight" type="dword" data="00000010"/>
-      <value name="StartType" type="hex" data="00"/>
+      <value name="StartType" type="hex" data="02"/>
       <value name="CmdLine" type="string" data="&quot;C:\Program Files\Git\usr\bin\sh.exe&quot; --login -i -c bash"/>
       <value name="StartTasksFile" type="string" data=""/>
-      <value name="StartTasksName" type="string" data=""/>
+      <value name="StartTasksName" type="string" data="{Git bash /c/projects}"/>
       <value name="StartFarFolders" type="hex" data="00"/>
       <value name="StartFarEditors" type="hex" data="00"/>
       <value name="ColorTable00" type="dword" data="00423607"/>
@@ -97,7 +97,8 @@
       <value name="StoreTaskbarkTasks" type="hex" data="00"/>
       <value name="StoreTaskbarCommands" type="hex" data="00"/>
       <value name="SaveCmdHistory" type="hex" data="01"/>
-      <value name="CmdLineHistory" type="multi"><line data="{Bash::Git bash}"/><line data="{git bash}"/></value>
+      <value name="CmdLineHistory" type="multi"><line data="{Bash::Git bash}"/><line data="{git bash}"/>
+			</value>
       <value name="ShowHelpTooltips" type="hex" data="01"/>
       <value name="Multi" type="hex" data="00"/>
       <value name="Multi.ShowButtons" type="hex" data="01"/>
@@ -146,7 +147,7 @@
       <value name="ConWnd Width" type="dword" data="00000077"/>
       <value name="ConWnd Height" type="dword" data="0000003f"/>
       <value name="Cascaded" type="hex" data="01"/>
-      <value name="ConWnd X" type="dword" data="fffffc39"/>
+      <value name="ConWnd X" type="dword" data="000003b9"/>
       <value name="ConWnd Y" type="dword" data="00000000"/>
       <value name="16bit Height" type="dword" data="00000000"/>
       <value name="AutoSaveSizePos" type="hex" data="01"/>
@@ -548,18 +549,19 @@
       <value name="DndLKey" type="hex" data="00"/>
       <value name="DndRKey" type="hex" data="a2"/>
       <value name="WndDragKey" type="dword" data="00121101"/>
-      <key name="Tasks" modified="2015-05-14 13:21:14" build="150504">
-        <value name="Count" type="dword" data="0000000b"/>
-        <key name="Task1" modified="2015-05-14 13:21:14" build="150504">
-          <value name="Name" type="string" data="{Shells::cmd}"/>
+      <key name="Tasks" modified="2015-12-06 15:10:47" build="151205">
+        <value name="Count" type="dword" data="00000001"/>
+        <key name="Task1" modified="2015-12-06 15:11:09" build="151205">
+          <value name="Name" type="string" data="{Git bash /c/projects}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
           <value name="GuiArgs" type="string" data=""/>
-          <value name="Cmd1" type="string" data="cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot;"/>
+          <value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\usr\bin\bash.exe&quot; --login -i -c  bash  -new_console:d:C:\projects"/>
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
-        </key>
-        <key name="Task2" modified="2015-05-14 13:21:14" build="150504">
+        	<value name="Cmd2" type="string" data="&quot;%HOME%\.start.sh&quot;"/>
+				</key>
+        <key name="Task2" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -568,7 +570,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task3" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task3" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Shells::cmd 64/32}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -578,7 +580,7 @@
           <value name="Count" type="dword" data="00000002"/>
           <value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
         </key>
-        <key name="Task4" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task4" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Shells::PowerShell}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -587,7 +589,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task5" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task5" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -597,7 +599,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task6" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task6" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Bash::Git bash 2}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -606,7 +608,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task7" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task7" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Bash::Git bash 2}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -615,16 +617,16 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task8" modified="2015-05-14 13:21:14" build="150504">
-          <value name="Name" type="string" data="{Bash::Git bash 2}"/>
+        <key name="Task8" modified="2015-12-06 11:48:36" build="151202">
+          <value name="Name" type="string" data="{Bash::Git bash /c/projects}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
-          <value name="GuiArgs" type="string" data=""/>
-          <value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\usr\bin\sh.exe&quot; --login -i -new_console:C:&quot;%ProgramW6432%\Git\mingw32\share\git\git-for-windows.ico&quot;"/>
+          <value name="GuiArgs" type="string" data="/dir &quot;C:\projects&quot;"/>
+          <value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\usr\bin\sh.exe&quot; --login -i -new_console:C:&quot;%ProgramW6432%\Git\mingw32\share\git\git-for-windows.ico&quot; -new_console:d:C:\projects"/>
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task9" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task9" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Putty}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -633,7 +635,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task10" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task10" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Tests::Show ANSI colors}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -642,7 +644,7 @@
           <value name="Active" type="dword" data="00000000"/>
           <value name="Count" type="dword" data="00000001"/>
         </key>
-        <key name="Task11" modified="2015-05-14 13:21:14" build="150504">
+        <key name="Task11" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Scripts::Chocolatey (Admin)}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -734,10 +736,10 @@
           <value name="Count" type="dword" data="00000001"/>
         </key>
       </key>
-      <key name="Apps" modified="2015-05-14 13:21:14" build="150504">
+      <key name="Apps" modified="2015-12-06 15:11:09" build="151205">
         <value name="Count" type="dword" data="00000000"/>
       </key>
-      <key name="Colors" modified="2015-05-14 13:21:14" build="150504">
+      <key name="Colors" modified="2015-12-06 15:11:09" build="151205">
         <value name="Count" type="dword" data="00000000"/>
       </key>
       <value name="Multi.CloseConfirm" type="hex" data="00"/>
@@ -746,7 +748,7 @@
       <value name="Key.PicViewSlide" type="dword" data="80808013"/>
       <value name="Key.PicViewSlower" type="dword" data="808080bd"/>
       <value name="Key.PicViewFaster" type="dword" data="808080bb"/>
-      <key name="HotKeys" modified="2015-05-14 13:21:14" build="150504">
+      <key name="HotKeys" modified="2015-12-06 15:10:47" build="151205">
         <value name="KeyMacroVersion" type="hex" data="02"/>
         <value name="Multi.Modifier" type="dword" data="0000005b"/>
         <value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -923,7 +925,20 @@
         <value name="DndLKey" type="hex" data="00"/>
         <value name="DndRKey" type="hex" data="a2"/>
         <value name="WndDragKey" type="dword" data="00121101"/>
-      </key>
-    </key>
+      	<value name="Multi.Unfasten" type="dword" data="00000000"/>
+				<value name="Key.DebugProcess" type="dword" data="00105b44"/>
+				<value name="Key.DumpProcess" type="dword" data="00000000"/>
+				<value name="Key.DumpTree" type="dword" data="00000000"/>
+			</key>
+    	<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
+			<value name="StartCreateDelay" type="dword" data="00000064"/>
+			<value name="DefaultTerminalDebugLog" type="hex" data="00"/>
+			<value name="SuppressBells" type="hex" data="01"/>
+			<value name="Restore2ActiveMon" type="hex" data="00"/>
+			<value name="DownShowExOnTopMessage" type="hex" data="00"/>
+			<value name="EnvironmentSet" type="multi"/>
+			<value name="Update.InetTool" type="hex" data="00"/>
+			<value name="Update.InetToolCmd" type="string" data=""/>
+		</key>
   </key>
 </key>
