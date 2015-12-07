@@ -132,6 +132,12 @@ npm config set prefix '~/npm/'
 # use msys2015 when compiling modules
 npm config set msvs_version 2015
 
+```
+
+# in `git bash`
+
+```bash
+
 # generate personal ssh certificates into `~/.ssh`
 # NOTE - update your email and name
 ssh-keygen -f ~/.ssh/id_rsa -t rsa -N "" -C "email@email.com"
@@ -139,12 +145,6 @@ git config --global user.email "email@email.com"
 git config --global user.name "John Doe"
 chmod 700 ~/.ssh/
 chmod 600 ~/.ssh/id_rsa*
-
-```
-
-# in `git bash`
-
-```bash
 
 # From [micnigh/windows-dotfiles](https://github.com/micnigh/windows-dotfiles)
 # install dotfiles
