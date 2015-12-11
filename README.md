@@ -44,6 +44,8 @@ mkdir -p /c/projects/
 cinst -y \
   7zip \
   jdk8 \
+  maven \
+  gradle \
   androidstudio \
   visualstudio2015community \
   python2 \
