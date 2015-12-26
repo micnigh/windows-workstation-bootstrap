@@ -49,7 +49,7 @@ cinst -y \
   androidstudio \
   visualstudio2015community \
   python2 \
-  nodejs -version 4.2.2 \
+  nodejs -version 4.2.4 \
   firefox \
   eclipse \
   vcredist2013 \
