@@ -102,6 +102,8 @@ This will install the sdk you need to compile native node C++ modules on windows
 
 Run `Android Studio` and complete initial setup to install `adb` and `fastboot` tools
 
+For `fastboot` you will need the [google usb drivers](https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip)
+
 # in `conemu`
 
 ```bash
