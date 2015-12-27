@@ -98,6 +98,10 @@ Roughly from this [comment](https://github.com/nodejs/node-gyp/issues/629#issuec
 
 This will install the sdk you need to compile native node C++ modules on windows, improving performance.
 
+# prepare android sdk
+
+Run `Android Studio` and complete initial setup to install `adb` and `fastboot` tools
+
 # in `conemu`
 
 ```bash
