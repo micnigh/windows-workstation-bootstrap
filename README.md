@@ -49,7 +49,6 @@ cinst -y \
   androidstudio \
   visualstudio2015community \
   python2 \
-  nodejs -version 4.2.4 \
   firefox \
   eclipse \
   vcredist2013 \
@@ -64,7 +63,8 @@ cinst -y \
   bulkrenameutility \
   treesizefree \
   curl \
-  wget
+  wget \
+|| cinst -y nodejs -version 4.2.2
 
 # requires interaction or sometimes fails
 cinst -y \
