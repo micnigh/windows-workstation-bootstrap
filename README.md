@@ -26,6 +26,7 @@ cinst -y conemu
 
 # install ConEmu.xml config
 curl \
+  --insecure \
   -o $APPDATA/ConEmu.xml \
   https://raw.githubusercontent.com/micnigh/windows-workstation-bootstrap/master/files/AppData/Roaming/ConEmu.xml
 
