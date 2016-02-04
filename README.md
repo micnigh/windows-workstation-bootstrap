@@ -49,7 +49,6 @@ cinst -y \
   androidstudio \
   visualstudio2015community \
   python2 \
-  nodejs -version 4.2.2 \
   firefox \
   eclipse \
   vcredist2013 \
@@ -64,7 +63,8 @@ cinst -y \
   bulkrenameutility \
   treesizefree \
   curl \
-  wget
+  wget \
+|| cinst -y nodejs -version 4.2.2
 
 # requires interaction or sometimes fails
 cinst -y \
@@ -97,6 +97,12 @@ Roughly from this [comment](https://github.com/nodejs/node-gyp/issues/629#issuec
  - Run `Install Visual C++ 2015 Tools`
 
 This will install the sdk you need to compile native node C++ modules on windows, improving performance.
+
+# prepare android sdk
+
+Run `Android Studio` and complete initial setup to install `adb` and `fastboot` tools
+
+For `fastboot` you will need the [google usb drivers](https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip)
 
 # in `conemu`
 
