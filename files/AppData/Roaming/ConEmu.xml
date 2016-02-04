@@ -549,26 +549,26 @@
       <value name="DndLKey" type="hex" data="00"/>
       <value name="DndRKey" type="hex" data="a2"/>
       <value name="WndDragKey" type="dword" data="00121101"/>
-      <key name="Tasks" modified="2015-12-06 15:10:47" build="151205">
-        <value name="Count" type="dword" data="00000001"/>
-        <key name="Task1" modified="2015-12-06 15:11:09" build="151205">
+      <key name="Tasks" modified="2016-02-03 18:26:23" build="160202">
+        <value name="Count" type="long" data="2"/>
+        <key name="Task1" modified="2016-02-03 18:26:41" build="160202">
           <value name="Name" type="string" data="{Git bash /c/projects}"/>
-          <value name="Flags" type="dword" data="00000000"/>
+          <value name="Flags" type="dword" data="00000001"/>
           <value name="Hotkey" type="dword" data="00000000"/>
           <value name="GuiArgs" type="string" data=""/>
           <value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\usr\bin\bash.exe&quot; --login -i -c  bash  -new_console:d:C:\projects"/>
-          <value name="Active" type="dword" data="00000000"/>
-          <value name="Count" type="dword" data="00000001"/>
+          <value name="Active" type="long" data="0"/>
+          <value name="Count" type="long" data="1"/>
         	<value name="Cmd2" type="string" data="&quot;%HOME%\.start.sh&quot;"/>
 				</key>
-        <key name="Task2" modified="2015-12-06 11:48:36" build="151202">
-          <value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
+        <key name="Task2" modified="2016-02-03 18:27:37" build="160202">
+          <value name="Name" type="string" data="{Git bash}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
           <value name="GuiArgs" type="string" data=""/>
-          <value name="Cmd1" type="string" data="cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot; -new_console:a"/>
-          <value name="Active" type="dword" data="00000000"/>
-          <value name="Count" type="dword" data="00000001"/>
+          <value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\usr\bin\bash.exe&quot; --login -i -c  bash"/>
+          <value name="Active" type="long" data="0"/>
+          <value name="Count" type="long" data="1"/>
         </key>
         <key name="Task3" modified="2015-12-06 11:48:36" build="151202">
           <value name="Name" type="string" data="{Shells::cmd 64/32}"/>
@@ -798,7 +798,7 @@
         <value name="CloseExceptConKey" type="dword" data="00000000"/>
         <value name="KillProcessKey" type="dword" data="00000000"/>
         <value name="KillAllButShellKey" type="dword" data="00105b2e"/>
-        <value name="DuplicateRootKey" type="dword" data="00001154"/>
+        <value name="DuplicateRootKey" type="dword" data="00000000"/>
         <value name="CloseConEmuKey" type="dword" data="00005b73"/>
         <value name="Multi.Rename" type="dword" data="00005d52"/>
         <value name="AffinityPriorityKey" type="dword" data="00005d41"/>
@@ -853,8 +853,8 @@
         <value name="PasteFileKey" type="dword" data="00101146"/>
         <value name="PastePathKey" type="dword" data="00101144"/>
         <value name="PasteCygwinKey" type="dword" data="00005d2d"/>
-        <value name="KeyMacro01" type="dword" data="00000000"/>
-        <value name="KeyMacro01.Text" type="string" data=""/>
+        <value name="KeyMacro01" type="dword" data="00001154"/>
+        <value name="KeyMacro01.Text" type="string" data="Shell(&quot;new_console&quot;, &quot;{Git bash}&quot;, &quot;&quot;, &quot;%CD%&quot;)"/>
         <value name="KeyMacro02" type="dword" data="00000000"/>
         <value name="KeyMacro02.Text" type="string" data=""/>
         <value name="KeyMacro03" type="dword" data="00000000"/>
