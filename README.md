@@ -120,7 +120,7 @@ apm install \
     linter-eslint \
     linter-htmlhint \
     linter-less \
-    linter-scss-lint \
+    linter-sass-lint \
   pigments \
   line-ending-converter \
   git-plus \
