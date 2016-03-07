@@ -121,6 +121,7 @@ apm install \
     linter-htmlhint \
     linter-less \
     linter-sass-lint \
+    linter-tslint \
   pigments \
   line-ending-converter \
   git-plus \
@@ -133,7 +134,8 @@ apm install \
   Sublime-Style-Column-Selection \
   color-picker \
   editorconfig \
-  imdone-atom
+  imdone-atom \
+  atom-typescript
 
 # npm config
 # use user path, not install path
