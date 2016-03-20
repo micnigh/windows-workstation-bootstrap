@@ -26,6 +26,7 @@ cinst -y conemu
 
 # install ConEmu.xml config
 curl \
+  --insecure \
   -o $APPDATA/ConEmu.xml \
   https://raw.githubusercontent.com/micnigh/windows-workstation-bootstrap/master/files/AppData/Roaming/ConEmu.xml
 
@@ -119,7 +120,8 @@ apm install \
     linter-eslint \
     linter-htmlhint \
     linter-less \
-    linter-scss-lint \
+    linter-sass-lint \
+    linter-tslint \
   pigments \
   line-ending-converter \
   git-plus \
@@ -132,7 +134,8 @@ apm install \
   Sublime-Style-Column-Selection \
   color-picker \
   editorconfig \
-  imdone-atom
+  imdone-atom \
+  atom-typescript
 
 # npm config
 # use user path, not install path
