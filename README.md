@@ -64,7 +64,7 @@ cinst -y \
   treesizefree \
   curl \
   wget \
-|| cinst -y nodejs -version 4.2.2
+|| cinst -y nodejs -version 4.4.0
 
 # requires interaction or sometimes fails
 cinst -y \
