@@ -1,13 +1,5 @@
 Bootstrap guide for new windows workstation setup.
 
-# manually install from links
-
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html)
-
-[Atom](https://atom.io/download/windows)
-
-[Docker Toolbox](https://www.docker.com/toolbox) - check all the checkboxes
-
 # in elevated `cmd`
 
 ```bash
@@ -16,7 +8,7 @@ Bootstrap guide for new windows workstation setup.
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
 # install conemu
-cinst -y conemu
+cinst -y conemu git
 
 ```
 
@@ -44,72 +36,33 @@ mkdir -p /c/projects/
 #
 cinst -y \
   7zip \
-  jdk8 \
-  maven \
-  gradle \
-  androidstudio \
-  visualstudio2015community \
   python2 \
+  googlechrome \
   firefox \
-  eclipse \
-  vcredist2013 \
-  mysql.workbench \
-  notepadplusplus \
-  putty \
-  winscp \
+  atom \
   sublimetext3 \
   sublimetext3.packagecontrol \
   sublimetext3-contextmenu \
+  docker \
+  docker-compose \
+  notepadplusplus \
+  putty \
+  winscp \
   greenshot \
   bulkrenameutility \
-  treesizefree \
   curl \
   wget \
-|| cinst -y nodejs -version 4.4.0
+  nodejs
 
-# requires interaction or sometimes fails
-cinst -y \
-  colorpic
-
-#
-# games
-#
-cinst -y \
-  steam \
-  origin \
-  teamspeak
-
-#
-# misc
-#
-cinst -y \
-  dropbox \
-  handbrake.install \
-  anydvd
+npm install --global --production windows-build-tools
 
 ```
-
-# prepare c++ tools [due to node-gyp npm issues](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151018292)
-
-Roughly from this [comment](https://github.com/nodejs/node-gyp/issues/629#issuecomment-151009181)
-
- - Start VS2015
- - File -> New Project -> Visual C++
- - Run `Install Visual C++ 2015 Tools`
-
-This will install the sdk you need to compile native node C++ modules on windows, improving performance.
-
-# prepare android sdk
-
-Run `Android Studio` and complete initial setup to install `adb` and `fastboot` tools
-
-For `fastboot` you will need the [google usb drivers](https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip)
 
 # in `conemu`
 
 ```bash
 
-# apm packages
+# atom editor packages
 apm install \
   minimap \
     minimap-git-diff \
@@ -118,30 +71,15 @@ apm install \
     minimap-pigments \
   linter \
     linter-eslint \
-    linter-htmlhint \
-    linter-less \
     linter-sass-lint \
     linter-tslint \
   pigments \
-  line-ending-converter \
-  git-plus \
-  merge-conflicts \
   language-docker \
   language-babel \
   file-type-icons \
   file-icons \
-  tabs-to-spaces \
-  Sublime-Style-Column-Selection \
-  color-picker \
   editorconfig \
-  imdone-atom \
   atom-typescript
-
-# npm config
-# use user path, not install path
-npm config set prefix '~/npm/'
-# use msys2015 when compiling modules
-npm config set msvs_version 2015
 
 ```
 
