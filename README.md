@@ -82,6 +82,7 @@ apm install \
     minimap-selection \
     minimap-pigments \
   linter \
+    linter-ui-default \
     linter-eslint \
     linter-sass-lint \
     linter-tslint \
