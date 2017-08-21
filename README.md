@@ -30,13 +30,9 @@ mkdir -p /c/projects/
 # in elevated `conemu`
 
 ```bash
-
-#
-# workstation tools - may take a long time
-#
+# workstation tools
 cinst -y \
   7zip \
-  python2 \
   googlechrome \
   firefox \
   atom \
@@ -52,17 +48,22 @@ cinst -y \
   bulkrenameutility \
   curl \
   wget \
+  python \
   nodejs
 
-npm install --global --production windows-build-tools
+```
 
+# in elevated `conemu`
+
+```bash
+# install dev dependencies to compile nodejs binary packages
+npm install --global --production windows-build-tools
 ```
 
 # in `conemu`
 
 ```bash
-
-# atom editor packages
+# optional - atom editor packages
 apm install \
   minimap \
     minimap-git-diff \
@@ -81,12 +82,7 @@ apm install \
   editorconfig \
   atom-typescript
 
-```
-
-# in `git bash`
-
-```bash
-
+# optional - generate ssh key
 # generate personal ssh certificates into `~/.ssh`
 # NOTE - update your email and name
 ssh-keygen -f ~/.ssh/id_rsa -t rsa -N "" -C "email@email.com"
@@ -95,6 +91,7 @@ git config --global user.name "John Doe"
 chmod 700 ~/.ssh/
 chmod 600 ~/.ssh/id_rsa*
 
+# optional - install my version of windows dotfiles
 # From [micnigh/windows-dotfiles](https://github.com/micnigh/windows-dotfiles)
 # install dotfiles
 cd ~/
