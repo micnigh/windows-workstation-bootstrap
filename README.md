@@ -92,7 +92,8 @@ apm install \
   file-type-icons \
   file-icons \
   editorconfig \
-  atom-typescript
+  atom-typescript \
+  atom-ide-ui
 
 # optional - generate ssh key
 # generate personal ssh certificates into `~/.ssh`
