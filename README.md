@@ -53,6 +53,13 @@ cinst -y \
 
 ```
 
+# in elevated `cmd`
+
+```bash
+# add subl command for shells
+mklink /h c:\windows\system32\subl.exe "c:\Program Files\Sublime Text 3\subl.exe"
+```
+
 # in elevated `conemu`
 
 ```bash
