@@ -39,6 +39,7 @@ cinst -y \
   sublimetext3 \
   sublimetext3.packagecontrol \
   sublimetext3-contextmenu \
+  visualstudiocode \
   docker \
   docker-compose \
   notepadplusplus \
