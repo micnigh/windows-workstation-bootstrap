@@ -53,11 +53,15 @@ cinst -y \
 
 ```
 
-# in elevated `cmd`
+# in elevated `powershell`
 
 ```bash
 # add subl command for shells
-mklink /h c:\windows\system32\subl.exe "c:\Program Files\Sublime Text 3\subl.exe"
+$PATH = [Environment]::GetEnvironmentVariable("PATH", "Machine")
+$subl_path = "C:\Program Files\Sublime Text 3"
+[Environment]::SetEnvironmentVariable("PATH", "$PATH;$subl_path", "Machine")
+
+
 ```
 
 # in elevated `conemu`
