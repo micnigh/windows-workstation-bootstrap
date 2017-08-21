@@ -37,9 +37,11 @@ cinst -y \
   firefox \
   atom \
   sublimetext3 \
-  sublimetext3.packagecontrol \
   sublimetext3-contextmenu \
   visualstudiocode \
+  webstorm \
+  datagrip \
+  intellijidea-ultimate \
   docker \
   docker-compose \
   notepadplusplus \
