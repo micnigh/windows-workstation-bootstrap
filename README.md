@@ -118,6 +118,19 @@ git reset --hard origin/master
 
 ```
 
+# in elevated `conemu`
+
+```bash
+# optional - install android adb tool (for pushing ota to device)
+cinst -y adb
+
+# optional - android development tools, studio and sdk
+cinst -y android-sdk androidstudio
+
+```
+
+
+
 # reboot
 
 All finished after rebooting :)
