@@ -98,7 +98,8 @@ apm install \
   atom-typescript \
   atom-ide-ui
 
-# optional - code editor packages
+# optional - visual studio code packages
+code --install-extension eg2.tslint
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension PeterJausovec.vscode-docker
