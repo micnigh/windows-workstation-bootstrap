@@ -98,6 +98,13 @@ apm install \
   atom-typescript \
   atom-ide-ui
 
+# optional - code editor packages
+code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension mgmcdermott.vscode-language-babel
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension stringham.move-ts
+
 # optional - generate ssh key
 # generate personal ssh certificates into `~/.ssh`
 # NOTE - update your email and name
